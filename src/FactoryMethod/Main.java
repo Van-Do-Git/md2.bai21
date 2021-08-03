@@ -8,8 +8,13 @@ public class Main {
 //        System.out.println(a1.makeSound());
 //        System.out.println(a2.makeSound());
 //    }
-
     public static void main(String[] args) {
-        System.out.println("Wellcome to modul 3");
+    FactoryShape factoryShape = new FactoryShape();
+    Shape a1 =  factoryShape.creatShape(ShapeType.CIRClE);
+    Shape a2  = factoryShape.creatShape(ShapeType.TRIAGLE);
+    Shape a3 = factoryShape.creatShape(ShapeType.RECTANGEL);
+    a1.draw();
+    a2.draw();
+    a3.draw();
     }
 }
